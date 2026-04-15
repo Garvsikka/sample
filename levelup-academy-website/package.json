@@ -1,7 +1,7 @@
 {
   "name": "levelup-academy-website",
   "version": "1.0.0",
-  "description": "Complete MERN Stack - LevelUp Academy",
+  "description": "MERN Stack Template Website",
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
@@ -9,14 +9,27 @@
     "dev:backend": "cd backend && npm run dev",
     "build": "npm run build:frontend && npm run build:backend",
     "build:frontend": "cd frontend && npm run build",
-    "build:backend": "cd backend && npm install",
+    "build:backend": "cd backend && npm install --production",
     "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
-    "start": "cd backend && npm start"
+    "start": "cd backend && npm start",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write ."
   },
-  "keywords": ["mern", "education", "academy", "maths", "ai"],
-  "author": "LevelUp Academy",
+  "keywords": [
+    "mern",
+    "template",
+    "education",
+    "academy",
+    "react",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "Template Maintainers",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.1"
+    "concurrently": "^8.2.1",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
   }
 }
