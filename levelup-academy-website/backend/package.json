@@ -1,7 +1,7 @@
 {
   "name": "levelup-academy-backend",
   "version": "1.0.0",
-  "description": "Backend API for LevelUp Academy - Maths Learning Platform",
+  "description": "Backend API for process.env.PROJECT_NAME - Maths Learning Platform",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["education", "maths", "academy", "api", "mongodb"],
-  "author": "LevelUp Academy",
+  "author": "process.env.PROJECT_NAME",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
